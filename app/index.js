@@ -1,14 +1,11 @@
-const { PropTypes, Component } = React;
+import React, { Component } from 'react'
+import { render } from 'react-dom'
 
-class HelloWorld extends Component {
-  render() {
-    return (
-      <h1>Hallo wereld!</h1>
-    )
-  }
-}
+const Test = () => (
+  <h1>Hello world!</h1>
+)
 
-ReactDOMFiber.render(
-  <HelloWorld />,
-  document.querySelector('.react-mount')
-);
+render(
+  <Test />,
+  document.getElementById('app')
+)
