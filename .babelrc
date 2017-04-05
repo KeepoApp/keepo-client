@@ -1,5 +1,14 @@
 {
   "env": {
+    "production": {
+        "presets": [
+        "react",
+        ["es2015", { "modules": false }]
+      ],
+      "plugins": [
+        "transform-class-properties"
+      ]
+    },
     "development": {
       "presets": [
         "react",
