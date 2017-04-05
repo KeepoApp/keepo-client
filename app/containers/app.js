@@ -8,7 +8,9 @@ import Login from './pages/login/index';
 
 const App = () => (
   <Router>
-    <Route exact path="/" component={Login} />
+    <div>
+      <Route exact path="/" component={Login} />
+    </div>
   </Router>
 );
 

@@ -9,7 +9,7 @@ const Root = ({ store }) => (
 );
 
 Root.propTypes = {
-  store: PropTypes.object.shape({
+  store: PropTypes.shape({
     dispatch: PropTypes.func.isRequired,
     getState: PropTypes.func.isRequired,
     replaceReducer: PropTypes.func.isRequired,
