@@ -15,12 +15,11 @@ module.exports = {
     publicPath: '/'
   },
   plugins: [
-    new webpack.DefinePlugin({ // <-- key to reducing React's size
+    new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('production')
       }
     }),
-    new webpack.optimize.AggressiveMergingPlugin(), //Merge chunks 
     new webpack.optimize.CommonsChunkPlugin('vendor'),
     new Visualizer()
   ],
@@ -33,10 +32,4 @@ module.exports = {
       }
     ]
   },
-  devServer: {
-    contentBase: './app',
-    historyApiFallback: true, // for use with client side router
-    hot: false,
-    port: 3000
-  }
 }
