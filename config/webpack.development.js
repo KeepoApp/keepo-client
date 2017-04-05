@@ -1,7 +1,6 @@
 const webpack = require('webpack')
 const path = require('path')
 const cwd = require('process').cwd()
-const Visualizer = require('webpack-visualizer-plugin')
 
 module.exports = {
   devtool: 'cheap-module-source-map',
@@ -12,7 +11,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(cwd, 'dist'),
-    publicPath: '/'
+    publicPath: '/dist'
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin('vendor'),
@@ -27,7 +26,7 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: './app',
+    contentBase: cwd,
     historyApiFallback: true, // for use with client side router
     hot: false,
     port: 3000
