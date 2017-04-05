@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Keepo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="google-signin-client_id" content="112553000603-5e53fevk95rajgkgn8o40rf3r725ct7a.apps.googleusercontent.com.apps.googleusercontent.com">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
 
-      body {
-        font-family: 'Roboto', sans-serif;
-      }
+<head>
+  <meta charset="utf-8">
+  <title>Keepo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    
+    .react-layout-components--box {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+    }
+  </style>
+</head>
 
-      .react-layout-components--box {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="app">
-    </div>
-    <script src="./dist/vendor.js"></script>
-    <script src="./dist/client.js"></script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>    
-  </body>
+<body>
+  <div id="app">
+  </div>
+  <script src="./dist/vendor.js"></script>
+  <script src="./dist/client.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script>
+    gapi.load('client:auth2', () => {
+      window.gapiAuth = gapi.client.init({
+        client_id: '112553000603-k944if3irmaogoddl9uk6smd90b5c1e6.apps.googleusercontent.com',
+        scope: 'email',
+        cookiepolicy: 'single_host_origin',
+        fetch_basic_profile: false
+      });
+    });
+  </script>
+</body>
+
 </html>

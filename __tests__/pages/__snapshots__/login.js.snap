@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login page should render correctly 1`] = `
+<div
+  className="login react-layout-components--box"
+  style={
+    Object {
+      "WebkitBoxDirection": "normal",
+      "WebkitBoxOrient": "vertical",
+      "WebkitFlexDirection": "column",
+      "flexDirection": "column",
+      "msFlexDirection": "column",
+    }
+  }
+>
+  <div
+    className="login__box login__box--logo react-layout-components--box"
+    style={
+      Object {
+        "WebkitAlignItems": "center",
+        "WebkitBoxAlign": "center",
+        "WebkitBoxPack": "center",
+        "WebkitJustifyContent": "center",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "msFlexAlign": "center",
+        "msFlexPack": "center",
+      }
+    }
+  >
+    <img
+      alt=""
+      src="https://raw.githubusercontent.com/wesleydebruijn/keepo/master/public/img/logo.png"
+    />
+  </div>
+  <div
+    className="login__box login__box--form react-layout-components--box"
+    style={
+      Object {
+        "WebkitAlignItems": "center",
+        "WebkitBoxAlign": "center",
+        "WebkitBoxPack": "center",
+        "WebkitJustifyContent": "center",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "msFlexAlign": "center",
+        "msFlexPack": "center",
+      }
+    }
+  >
+    <div
+      className=" react-layout-components--box"
+      style={Object {}}
+    >
+      <div
+        className="g-signin2"
+        data-onsuccess="onSignIn"
+      />
+    </div>
+  </div>
+  <div
+    className="login__box login__box--love react-layout-components--box"
+    style={
+      Object {
+        "WebkitAlignItems": "center",
+        "WebkitBoxAlign": "center",
+        "WebkitBoxPack": "center",
+        "WebkitJustifyContent": "center",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "msFlexAlign": "center",
+        "msFlexPack": "center",
+      }
+    }
+  >
+    <p>
+      Made with 
+      <i
+        className="fa fa-heart"
+      />
+       by Wesley de Bruijn and Jeffrey van Hoven
+    </p>
+  </div>
+</div>
+`;
