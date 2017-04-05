@@ -2,6 +2,8 @@ const webpack = require('webpack')
 const path = require('path')
 const cwd = require('process').cwd()
 
+console.log('kanker zooi', cwd)
+
 module.exports = {
   devtool: 'cheap-module-source-map',
   entry: {
@@ -22,6 +24,11 @@ module.exports = {
         test: /\.js?$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
+      },
+      {
+        test: /\.less$/,
+        exclude: /node_modules/,
+        use: ['style-loader', 'css-loader', 'less-loader']
       }
     ]
   },

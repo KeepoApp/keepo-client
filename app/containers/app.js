@@ -5,33 +5,11 @@ import {
   Link
 } from 'react-router-dom';
 
-const Home = () => (
-  <h2>Hello home!</h2>
-)
-
-const About = () => (
-  <h2>Hello about!</h2>
-)
-
-const Topics = () => (
-  <h2>Hello topics!</h2>
-)
+import Login from './pages/login/index'
 
 const App = () => (
   <Router>
-    <div>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/topics">Topics</Link></li>
-      </ul>
-
-      <hr/>
-
-      <Route exact path="/" component={Home}/>
-      <Route path="/about" component={About}/>
-      <Route path="/topics" component={Topics}/>
-    </div>
+    <Route exact path="/" component={Login}/>
   </Router>
 )
 
