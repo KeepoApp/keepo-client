@@ -13,7 +13,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(cwd, 'dist'),
-    publicPath: '/',
+    publicPath: '/dist',
   },
   plugins: [
     new webpack.DefinePlugin({
@@ -37,5 +37,11 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'less-loader'],
       },
     ],
+  },
+  devServer: {
+    contentBase: cwd,
+    historyApiFallback: true, // for use with client side router
+    hot: false,
+    port: 3000,
   },
 };
