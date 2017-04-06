@@ -1,4 +1,11 @@
 language: node_js
 node_js:
-  - "6"
-  - "7"
+- '6'
+- '7'
+deploy:
+  provider: heroku
+  api_key:
+    secure: qWsr8oP4OOzlbnVccaLUQou46f4BbG3wrX1IarPj0kDe/kYnZ+CAYHnNl2MKOVxNBiZFNCyWVNIaHEla51SV48gPiSWmIAvjtuiXsVuTifVO4RTxZupsF8xskOOIlLN0nzAeT126GBgFVpn6w3f9JD/M4Qzbb2RmKTjLO3toMvTXV/UbTjFp0VWBRbl6uJ5SBu4a/RGzDnZQOhJmjSyMhM/QtqLfMPyaZ966RkMWZ5j1Y38FJSNueaz5AVO/dWf1YdQYMrGXPf5BWtR4z/KJ/pchUGhfAS25ecxsJTA6/KK94NxpgUUuhNv1/dFlFkHE2ckrCh3p2NIHUzEyR1tz0EdU4n1/UAIYpPyamv2Nbu+GoMjO8FBRqaOoh2CsI95xEWaLub3n9B7oIXeAiaKrXD/vyxuZL+8k459VXfvgPoUU0IttlnBqniLczJED4WlfKKp9zf3Tqyu35V8tUs7Ggl5MAPBstUcqEmxUtp3zzhhslRAeyAuQqVW85mxRqYqPRAM5HIo24bYvAsHgyQ2I1ftDrmsXsMc506CK+nzJOkQNxvYTCbiHqcbOqxBQ5+hrQG53g99TKd/x6HyATxj5oB9RE81qphjtGohsYHLodMq8zm/Z8RUiMOgYHmoSpCHXHj5RkcyqGIzxajKBsqLEn/5uLen274GcyrZbS6E4Qkg=
+  app: keepo-app
+  on:
+    repo: jvhoven/Keepo
