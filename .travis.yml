@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - '6'
 - '7'
-before_deploy: yarn production
+before_deploy: yarn run production
 deploy:
   provider: heroku
   api_key:
