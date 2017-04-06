@@ -10,4 +10,4 @@ deploy:
   app: keepo-client
   on:
     repo: KeepoApp/keepo-client
-skip_cleanup: true
+  skip_cleanup: true
