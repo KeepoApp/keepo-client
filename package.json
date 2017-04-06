@@ -2,6 +2,7 @@
   "name": "unknown",
   "version": "0.0.1",
   "scripts": {
+    "start": "yarn development",
     "development": "cross-env NODE_ENV=development webpack-dev-server --config ./config/webpack.development.js",
     "production": "cross-env NODE_ENV=production webpack --config ./config/webpack.production.js -p",
     "test": "jest --notify --"
