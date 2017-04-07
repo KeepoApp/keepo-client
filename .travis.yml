@@ -11,3 +11,6 @@ deploy:
   on:
     repo: KeepoApp/keepo-client
   skip_cleanup: true
+branches:
+  only:
+  - master
