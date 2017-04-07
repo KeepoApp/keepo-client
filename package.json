@@ -5,7 +5,7 @@
     "start": "node server.js",
     "development": "cross-env NODE_ENV=development webpack-dev-server --config ./config/webpack.development.js",
     "production": "cross-env NODE_ENV=production webpack --config ./config/webpack.production.js -p",
-    "test": "jest --notify --"
+    "test": "jest --notify --watch"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",

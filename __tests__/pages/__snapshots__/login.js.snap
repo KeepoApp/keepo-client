@@ -14,26 +14,6 @@ exports[`Login page should render correctly 1`] = `
   }
 >
   <div
-    className="login__box login__box--logo react-layout-components--box"
-    style={
-      Object {
-        "WebkitAlignItems": "center",
-        "WebkitBoxAlign": "center",
-        "WebkitBoxPack": "center",
-        "WebkitJustifyContent": "center",
-        "alignItems": "center",
-        "justifyContent": "center",
-        "msFlexAlign": "center",
-        "msFlexPack": "center",
-      }
-    }
-  >
-    <img
-      alt=""
-      src="https://raw.githubusercontent.com/wesleydebruijn/keepo/master/public/img/logo.png"
-    />
-  </div>
-  <div
     className="login__box login__box--form react-layout-components--box"
     style={
       Object {
@@ -52,10 +32,30 @@ exports[`Login page should render correctly 1`] = `
       className=" react-layout-components--box"
       style={Object {}}
     >
-      <div
-        className="g-signin2"
-        data-onsuccess="onSignIn"
+      <img
+        alt=""
+        src="/assets/img/logo.png"
       />
+    </div>
+    <div
+      className="login__box login__box--social react-layout-components--box"
+      style={Object {}}
+    >
+      <h2>
+        Login
+      </h2>
+      <p>
+        Give thanks to the most high. Stay focused. Always remember in the jungle there’s a lot of they in there.
+      </p>
+      <div
+        className=" react-layout-components--box"
+        style={Object {}}
+      >
+        <div
+          className="g-signin2"
+          data-onsuccess="onSignIn"
+        />
+      </div>
     </div>
   </div>
   <div

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Session page should render correctly 1`] = `
+<h1>
+  Hallo wereld!
+</h1>
+`;
