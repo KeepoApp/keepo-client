@@ -2,44 +2,24 @@
 
 exports[`Login page should render correctly 1`] = `
 <div
-  className="login react-layout-components--box"
-  style={
-    Object {
-      "WebkitBoxDirection": "normal",
-      "WebkitBoxOrient": "vertical",
-      "WebkitFlexDirection": "column",
-      "flexDirection": "column",
-      "msFlexDirection": "column",
-    }
-  }
+  className="login flex-center"
 >
   <div
-    className="login__box login__box--form react-layout-components--box"
-    style={
-      Object {
-        "WebkitAlignItems": "center",
-        "WebkitBoxAlign": "center",
-        "WebkitBoxPack": "center",
-        "WebkitJustifyContent": "center",
-        "alignItems": "center",
-        "justifyContent": "center",
-        "msFlexAlign": "center",
-        "msFlexPack": "center",
-      }
-    }
+    className="login__box"
   >
     <div
-      className=" react-layout-components--box"
-      style={Object {}}
+      className="box__logo flex-center"
     >
       <img
         alt=""
         src="/assets/img/logo.png"
       />
+      <div
+        className="divider"
+      />
     </div>
     <div
-      className="login__box login__box--social react-layout-components--box"
-      style={Object {}}
+      className="box__social"
     >
       <h2>
         Login
@@ -48,30 +28,13 @@ exports[`Login page should render correctly 1`] = `
         Give thanks to the most high. Stay focused. Always remember in the jungle there’s a lot of they in there.
       </p>
       <div
-        className=" react-layout-components--box"
-        style={Object {}}
-      >
-        <div
-          className="g-signin2"
-          data-onsuccess="onSignIn"
-        />
-      </div>
+        className="g-signin2"
+        data-onsuccess="onSignIn"
+      />
     </div>
   </div>
   <div
-    className="login__box login__box--love react-layout-components--box"
-    style={
-      Object {
-        "WebkitAlignItems": "center",
-        "WebkitBoxAlign": "center",
-        "WebkitBoxPack": "center",
-        "WebkitJustifyContent": "center",
-        "alignItems": "center",
-        "justifyContent": "center",
-        "msFlexAlign": "center",
-        "msFlexPack": "center",
-      }
-    }
+    className="login__love"
   >
     <p>
       Made with 
