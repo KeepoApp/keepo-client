@@ -5,12 +5,19 @@ import './login.less';
 
 const Login = () => (
   <VBox className="login">
-    <Center className="login__box login__box--logo">
-      <img src="https://raw.githubusercontent.com/wesleydebruijn/keepo/master/public/img/logo.png" alt="" />
-    </Center>
     <Center className="login__box login__box--form">
       <Box>
-        <div className="g-signin2" data-onsuccess="onSignIn" />
+        <img src="/assets/img/logo.png" alt="" />
+      </Box>
+      <Box className="login__box login__box--social">
+        <h2>Login</h2>
+        <p>
+          Give thanks to the most high. Stay focused.
+          Always remember in the jungle there’s a lot of they in there.
+        </p>
+        <Box>
+          <div className="g-signin2" data-onsuccess="onSignIn" />
+        </Box>
       </Box>
     </Center>
     <Center className="login__box login__box--love">
