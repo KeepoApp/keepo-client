@@ -13,7 +13,7 @@ const Login = () => {
     <div className="login flex-center">
       <div className="login__box">
         <div className="box__logo flex-center">
-          <img src="/assets/img/logo.png" alt="" />
+          <img src="/public/img/logo.png" alt="" />
           <div className="divider" />
         </div>
         <div className="box__social">
