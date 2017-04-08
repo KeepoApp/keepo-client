@@ -27,10 +27,11 @@ exports[`Login page should render correctly 1`] = `
       <p>
         Give thanks to the most high. Stay focused. Always remember in the jungle there’s a lot of they in there.
       </p>
-      <div
-        className="g-signin2"
-        data-onsuccess="onSignIn"
-      />
+      <button
+        onClick={[Function]}
+      >
+        Login with Google
+      </button>
     </div>
   </div>
   <div
