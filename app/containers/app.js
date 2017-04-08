@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import auth from 'firebase/auth';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
 } from 'react-router-dom';
 
 import PrivateRoute from '../components/routes/private';
