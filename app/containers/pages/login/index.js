@@ -1,5 +1,6 @@
 import React from 'react';
 import auth from 'firebase/auth';
+import { Button } from 'semantic-ui-react';
 
 import './login.less';
 
@@ -22,7 +23,7 @@ const Login = () => {
             Give thanks to the most high. Stay focused.
             Always remember in the jungle there’s a lot of they in there.
           </p>
-          <button onClick={() => login()}>Login with Google</button>
+          <Button primary onClick={() => login()}>Login with Google</Button>
         </div>
       </div>
       <div className="login__love">

@@ -13,3 +13,4 @@ import 'firebase/auth';
 
 // Third-party
 import 'react-router-dom';
+import 'semantic-ui-react';
