@@ -4,10 +4,13 @@ import {
   HashRouter as Router,
 } from 'react-router-dom';
 
+import { Loader } from 'semantic-ui-react';
+
 import PrivateRoute from '../components/routes/private';
 import PublicRoute from '../components/routes/public';
 import Login from './pages/login/index';
 import Session from './pages/session/index';
+
 
 export default class App extends Component {
   state = {
@@ -34,7 +37,7 @@ export default class App extends Component {
   }
 
   render() {
-    return this.state.loading ? <h1>Loading...</h1> : (
+    return this.state.loading ? <Loader active inline="centered" /> : (
       <Router>
         <div>
           <PublicRoute authenticated={this.state.authenticated} exact path="/login" component={Login} />
