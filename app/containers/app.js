@@ -37,7 +37,9 @@ export default class App extends Component {
   }
 
   render() {
-    return this.state.loading ? <Loader active inline="centered" /> : (
+    return this.state.loading 
+      ? <div className="page flex-center"><Loader active inline="centered" /></div>
+      : (
       <Router>
         <div>
           <PublicRoute authenticated={this.state.authenticated} exact path="/login" component={Login} />

@@ -11,7 +11,7 @@ const Login = () => {
   };
 
   return (
-    <div className="login flex-center">
+    <div className="page page--login flex-center">
       <div className="login__box">
         <div className="box__logo flex-center">
           <img src="/assets/img/logo.png" alt="" />
