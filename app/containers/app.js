@@ -43,7 +43,7 @@ export default class App extends Component {
       <Router>
         <div>
           <PublicRoute authenticated={this.state.authenticated} exact path="/login" component={Login} />
-          <PrivateRoute authenticated={this.state.authenticated} path="/" component={Session} />
+          <PublicRoute authenticated={this.state.authenticated} path="/" component={Session} />
         </div>
       </Router>
     );
