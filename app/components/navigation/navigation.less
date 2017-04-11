@@ -1,4 +1,5 @@
 nav {
+  display: flex;
   width: 100%;
   height: 55px;
   background: #FFF;
@@ -11,28 +12,20 @@ nav {
   }
 
   .nav__logo {
-    float: left;
     background: url('/assets/img/keepo-logo.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 40px auto;
-    width: 155px;
+    flex: 0 0 5rem;
     height: 55px;
   }
 
   .nav__toggler {
     font-size: 1.25rem;
-    float: left;
-    width: 45px;
+    flex: 0 0 10%;
   }
 
-  ul > li {
-    float: left;
-    list-style: none;
-    margin: 0 25px;
-
-    a {
-      color: rgba(0,0,0,.3);
-    }
+  .nav__profile {
+    flex: 0 0 60%;
   }
 }

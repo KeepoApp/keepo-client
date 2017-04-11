@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Profile from '../profile/index';
 import './navigation.less';
 
 const Navigation = () => (
@@ -8,17 +9,9 @@ const Navigation = () => (
     <div className="nav__toggler">
       ☰
     </div>
-    <ul>
-      <li>
-        <a href="#">Dashboard</a>
-      </li>
-      <li>
-        <a href="#">Sessions</a>
-      </li>
-      <li>
-        <a href="#">Account</a>
-      </li>
-    </ul>
+    <div className="nav__profile">
+      <Profile name="Wesley de Bruijn" image="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/7/005/024/093/34f66fd.jpg" />
+    </div>
   </nav>
 );
 

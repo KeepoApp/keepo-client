@@ -8,7 +8,6 @@ import './session.less';
 const Session = () => (
   <div className="page page--session">
     <Navigation />
-    <Aside />
   </div>
 );
 
