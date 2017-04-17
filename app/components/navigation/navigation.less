@@ -1,34 +1,43 @@
 nav {
   display: flex;
   flex: 1;
-  height: 55px;
+  height: 70px;
   background: #FFF;
   color: rgba(0,0,0,.3);
-  line-height: 55px;
+  line-height: 70px;
   justify-content: space-between;
+  box-shadow: 0 10px 50px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+  
+  ul {
+    flex-grow: 1;
+
+    li {
+      list-style: none;
+      float: left;
+      margin: 0 20px;
+
+      a {
+        color: rgba(0, 0, 0, 0.5);    
+      }
+
+      &.active a {
+        color: #1e70bf;
+        text-decoration: underline;
+      }
+    }
+  }
 
   .nav__logo {
     background: url('/assets/img/keepo-logo.png');
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 100px auto;
-    height: 55px;
+    background-size: 130px auto;
+    height: 70px;
     flex: 0 0 20%;
-  }
-
-  .nav__toggler {
-    font-size: 1.25rem;
-    flex: 0 0 20%;
-  }
-
-  .nav__logo, .nav__toggler {
-    text-align: center;
   }
   
-  .nav__profile {
-    margin-left: auto;
-    flex: 0 0 20%;
+  .nav__logout {
     align-self: flex-end;
-    align-content: flex-end;
   }
 }

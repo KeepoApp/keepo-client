@@ -1,14 +1,21 @@
 import React from 'react';
 
-import Profile from '../profile/index';
 import './navigation.less';
 
 const Navigation = () => (
   <nav>
     <div className="container">
       <div className="nav__logo" />
-      <div className="nav__profile">
-        <Profile name="Wesley de Bruijn" image="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/7/005/024/093/34f66fd.jpg" />
+      <ul>
+        <li className="active">
+          <a href="#">Dashboard</a>
+        </li>
+        <li>
+          <a href="#">Profile</a>
+        </li>
+      </ul>
+      <div className="nav__logout">
+        Sign out &nbsp;&nbsp; <i className="fa fa-sign-out" />
       </div>
     </div>
   </nav>
