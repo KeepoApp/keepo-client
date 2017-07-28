@@ -1,12 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Session from '../../app/containers/pages/session/index';
+import Dashboard from '../../app/containers/pages/dashboard/index';
 
-describe('Session page', () => {
+describe('Dashboard page', () => {
   it('should render correctly', () => {
     const component = renderer.create(
-      <Session />,
+      <Dashboard />,
     );
 
     const tree = component.toJSON();

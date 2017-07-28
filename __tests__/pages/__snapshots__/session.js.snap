@@ -1,7 +1,97 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Session page should render correctly 1`] = `
-<h1>
-  Hallo wereld!
-</h1>
+exports[`Dashboard page should render correctly 1`] = `
+<div
+  className="page page--session"
+>
+  <nav>
+    <div
+      className="container"
+    >
+      <div
+        className="nav__logo"
+      />
+      <ul>
+        <li
+          className="active"
+        >
+          <a
+            href="#"
+          >
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+          >
+            Profile
+          </a>
+        </li>
+      </ul>
+      <div
+        className="nav__logout"
+      >
+        Sign out    
+        <i
+          className="fa fa-sign-out"
+        />
+      </div>
+    </div>
+  </nav>
+  <div
+    className="container"
+  >
+    <div
+      className="ui vertical menu"
+    >
+      <div
+        className="item"
+        onClick={[Function]}
+      >
+        <img
+          alt={undefined}
+          className="ui tiny circular image"
+          height={undefined}
+          src="http://wesleydebruijn.nl/assets/img/wesleydebruijn.png"
+          width={undefined}
+        />
+        <br />
+        <b>
+          Wesley de Bruijn
+        </b>
+      </div>
+      <a
+        className="active item"
+        onClick={[Function]}
+      >
+        Dashboard
+      </a>
+      <a
+        className="item"
+        onClick={[Function]}
+      >
+        <div
+          className="ui green label"
+          onClick={[Function]}
+        >
+          2
+        </div>
+        Current sessions
+      </a>
+      <a
+        className="item"
+        onClick={[Function]}
+      >
+        <div
+          className="ui label"
+          onClick={[Function]}
+        >
+          51
+        </div>
+        Session history
+      </a>
+    </div>
+  </div>
+</div>
 `;

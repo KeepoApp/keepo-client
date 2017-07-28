@@ -2,7 +2,7 @@
 
 exports[`Login page should render correctly 1`] = `
 <div
-  className="login flex-center"
+  className="page page--login flex-center"
 >
   <div
     className="login__box"
@@ -28,7 +28,9 @@ exports[`Login page should render correctly 1`] = `
         Give thanks to the most high. Stay focused. Always remember in the jungle there’s a lot of they in there.
       </p>
       <button
+        className="ui primary button"
         onClick={[Function]}
+        tabIndex={undefined}
       >
         Login with Google
       </button>

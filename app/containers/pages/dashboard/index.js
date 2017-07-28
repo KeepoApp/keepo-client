@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import { Input, Label, Menu, Image, Icon } from 'semantic-ui-react'
+import { Input, Label, Menu, Image, Icon, Card, Divider } from 'semantic-ui-react'
 
 import Navigation from '../../../components/navigation/index';
 
-import './session.less';
+import './dashboard.less';
 
-class Session extends Component {
+class Dashboard extends Component {
   state = { activeItem: 'dashboard' }
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name }) 
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
   render() {
     const { activeItem } = this.state;
@@ -27,7 +27,7 @@ class Session extends Component {
               Dashboard
             </Menu.Item>
 
-             <Menu.Item name='updates' active={activeItem === 'updates'} onClick={this.handleItemClick}>
+            <Menu.Item name='updates' active={activeItem === 'updates'} onClick={this.handleItemClick}>
               <Label color="green">2</Label>
               Current sessions
             </Menu.Item>
@@ -43,4 +43,4 @@ class Session extends Component {
   }
 }
 
-export default Session;
+export default Dashboard;
