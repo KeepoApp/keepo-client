@@ -9,8 +9,7 @@ import { Loader } from 'semantic-ui-react';
 import PrivateRoute from '../components/routes/private';
 import PublicRoute from '../components/routes/public';
 import Login from './pages/login/index';
-import Session from './pages/session/index';
-
+import Dashboard from './pages/dashboard/index';
 
 export default class App extends Component {
   state = {
@@ -43,7 +42,7 @@ export default class App extends Component {
       <Router>
         <div>
           <PublicRoute authenticated={this.state.authenticated} exact path="/login" component={Login} />
-          <PublicRoute authenticated={this.state.authenticated} path="/" component={Session} />
+          <PublicRoute authenticated={this.state.authenticated} path="/" component={Dashboard} />
         </div>
       </Router>
     );
